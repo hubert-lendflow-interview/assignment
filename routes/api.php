@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\NYTimesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/1/nyt/best-sellers');
+Route::get('/1/nyt/best-sellers', [NYTimesController::class, 'getBestsellers']);
